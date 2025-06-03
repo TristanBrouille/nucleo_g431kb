@@ -7,7 +7,7 @@ maintainers = ["Olivier Henley <olivier.henley@gmail.com>"]
 maintainers-logins = ["ohenley"]
 licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
 website = ""
-tags = []
+tags = ["nucleo", "stm32", "stm32g4", "embedded"]
 
 [[depends-on]]
 light_tasking_stm32g431 = "*"
