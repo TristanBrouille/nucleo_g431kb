@@ -7,7 +7,9 @@
 ## Pin Map
 
 ```
-         _____________________
+                 ______
+         _______|      |______
+        |       |______|      |
         |                     |
         |    nucleo_g431kb    |    
         |                     |
@@ -31,9 +33,15 @@ PB4  -> |15                 15| <- PB3/PB8
 
 ## Hardwired
 
-- PB8  : User LED             (LD2) On board green LED.
-- NRST : Reset Button         (B1) Active-low reset input; triggers MCU reset.
-- PA2  : ST-LINK Virtual COM  (TX) Transmit line for virtual COM port.
-- PA15 :	ST-LINK Virtual COM  (RX) Receive line for virtual COM port.
-- PF0  : HSE Oscillator Input (OSC_IN)	High-speed external clock input.
-- PF1  :	HSE Oscillator Input (OSC_OUT) High-speed external clock output.
+```
+┌──────┬─────────────────────────┬─────────┬─────────────────────────────────────────┐
+│ Pin  │ Type                    │ Label   │ Description                             │
+├──────┼─────────────────────────┼─────────┼─────────────────────────────────────────┤
+│ PB8  │ User LED                │ LD2     │ On board green LED.                     │
+│ NRST │ Reset Button            │ B1      │ Active-low input, triggers MCU reset.   │
+│ PA2  │ ST-LINK Virtual COM     │ TX      │ Transmit line for virtual COM port.     │
+│ PA15 │ ST-LINK Virtual COM     │ RX      │ Receive line for virtual COM port.      │
+│ PF0  │ HSE Oscillator Input    │ OSC_IN  │ High-speed external clock input.        │
+│ PF1  │ HSE Oscillator Output   │ OSC_OUT │ High-speed external clock output.       │
+└──────┴─────────────────────────┴─────────┴─────────────────────────────────────────┘
+```
