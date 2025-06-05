@@ -28,8 +28,8 @@ alr build
 
 These are:
 - blinky (board user led flashes at 1 Hz)
-- pwm (a variable pwm is emitted on PA8)
-- sysclk (the 170 Mhz system clock is outputted on PA8)
+- pwm (a variable PWM is emitted on PA8. You will need an oscilloscope to inspect the wave form.)
+- sysclk (the 170 Mhz system clock is outputted on PA8. You will need a 200 MHz oscilloscope to inspect the wave form.)
 
 ## Flashing
 Using [openocd](https://github.com/openocd-org/openocd)
