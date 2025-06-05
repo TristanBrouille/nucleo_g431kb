@@ -1,5 +1,23 @@
 # nucleo_g431kb
 
+## Prerequisites (IMPORTANT)
+You will need to install the GAP alire index to access the package dependencies for this project
+
+```
+alr index --add git+https://github.com/GNAT-Academic-Program/gap-alire-index --name gap
+```
+
+## Demos
+
+To build the demos firmware:
+`cd demos`
+`alr build`
+
+These demos are 
+- blinky (board user led flashes at 1 Hz)
+- pwm (a variable pwm is emitted on PA8 Board Pin)
+- sysclk (the 170 Mhz system clock is outputted on PA8 Board Pin)
+
 ## MCU
 - MCU : stm32g431
 - Package : UFQFPN32
@@ -38,7 +56,8 @@ PB4  -> |15                 15| <- PB3/PB8
 │ Pin  │ Type                    │ Label   │ Description                             │
 ├──────┼─────────────────────────┼─────────┼─────────────────────────────────────────┤
 │ PB8  │ User LED                │ LD2     │ On board green LED.                     │
-│ NRST │ Reset Button            │ B1      │ Active-low input, triggers MCU reset.   │
+│ NRST │ Reset Button            │ B1      │ Active-low reset input, triggers MCU    │
+│      │                         │         │ reset.                                  │
 │ PA2  │ ST-LINK Virtual COM     │ TX      │ Transmit line for virtual COM port.     │
 │ PA15 │ ST-LINK Virtual COM     │ RX      │ Receive line for virtual COM port.      │
 │ PF0  │ HSE Oscillator Input    │ OSC_IN  │ High-speed external clock input.        │
