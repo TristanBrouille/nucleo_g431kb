@@ -10,8 +10,10 @@ alr index --add git+https://github.com/GNAT-Academic-Program/gap-alire-index --n
 ## Demos
 
 To build the demos firmware:
-`cd demos`
-`alr build`
+```
+cd demos  
+alr build
+```
 
 These demos are 
 - blinky (board user led flashes at 1 Hz)
