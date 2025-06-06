@@ -1,0 +1,17 @@
+name = "led_test"
+description = "petit test pour une led basique"
+version = "0.1.0-dev"
+
+authors = ["Tristan DHERSIN"]
+maintainers = ["Tristan DHERSIN <tristan.dhersin@gmail.com>"]
+maintainers-logins = ["TristanBrouille"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = []
+
+executables = ["led_test"]
+
+[[depends-on]]
+light_tasking_stm32g431 = "*"
+nucleo_g431kb = "*"
+gnat_arm_elf = "*"
