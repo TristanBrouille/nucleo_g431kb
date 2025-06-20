@@ -4,7 +4,7 @@ with Interfaces.STM32.GPIO; use Interfaces.STM32.GPIO;
 with Board;
 pragma Unreferenced (Board);
 
-procedure Blinky is
+procedure led_test is
 begin
    RCC_Periph.AHB2ENR.GPIOBEN := 1;       -- Enable GPIOB clock
    GPIOB_Periph.MODER.Arr (4) := 2#01#;   -- OUTPUT mode
@@ -25,4 +25,4 @@ begin
       GPIOB_Periph.BSRR.BR.Arr (4) := 1;  -- LED OFF
       delay 0.5;
    end loop;
-end Blinky;
+end led_test;
